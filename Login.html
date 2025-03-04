@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <center>
+
+    <div>
+        <h1>Student Registration</h1>
+        <form id="registration-form">
+            <div>
+                <label>Student Name:</label>
+                <input type="text" id="student-name" required>
+            </div>
+            <br> <br>
+
+            <div>
+                <label>Father Name:</label>
+                <input type="text" id="father-name" required>
+            </div>
+            <br> <br>
+
+            <div>
+                <label>Mother Name:</label>
+                <input type="text" id="mother-name" required>
+            </div>
+            <br> <br>
+
+            <div>
+                <label >Student Registration Number (SRN):</label>
+                <input type="text" id="srn" required>
+            </div>
+            <br> <br>
+
+            <div >
+                <label>Phone Number:</label>
+                <input type="tel" id="phone-number" required>
+            </div>
+            <br> <br>
+
+            <div>
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label for="male">
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio"  name="gender" value="female" required> Female
+                    </label>
+                </div>
+            </div>
+            <br> <br>
+            
+            <div >
+                <label>Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <br> <br>
+
+            <div>
+                <label>Qualification:</label>
+                <div>
+                    <label>
+                        <input type="checkbox" name="Qualification" value="10th grade"> 10th Grade
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="Qualification" value="PUC"> PUC
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="Qualification" value="Undergraduate"> Undergraduate
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="Qualification" value="Postgraduate"> Postgraduate
+                    </label><br>
+                </div>
+            </div>
+
+            <div>
+                <!-- Update button to trigger the function properly -->
+                <button type="button" onclick="popupmsg()">Register</button>
+            </div>
+        </form>
+    </div>
+</center>
+
+</body>
+
+<script>
+    
+    function popupmsg() {
+        alert("Registration Submitted");
+        
+    }
+</script>
+
+</html>
